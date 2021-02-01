@@ -4,11 +4,14 @@
     padding: 0px;
 }
 
+body{
+    margin: 0px;
+}
+
 /* genral purpose header and paragraph */
 .hprimary{
     text-align:center;
-    font-size: 2.5rem;
-
+    font-size: 3.5rem;
 } 
 .hsecondary{
     text-align: center;
@@ -30,21 +33,22 @@
     display : flex;
     /* border: 1px solid black ; */
     position: sticky;
-    top:4px;
-    background-color: rgb(137, 137, 151);
-
+    top:0px;
+    margin:0px;
+    padding: 0px;
+    border: 0px;
 }
 
 #navbar::before{
     content: "";
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(150, 150, 150);
     position: absolute;
     top:0px;
     left:0px;
     height: 100%;
     width:100%;
     z-index: -1;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 #logo{
@@ -54,6 +58,8 @@
 #logo img{
     height: 50px;
     width:55px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
 }
 
 #navbar ul{
@@ -78,7 +84,7 @@
 #navbar ul li a{
     padding-left: 10px;
     padding-right: 10px;
-    color:black;
+    color:rgb(255, 255, 255);
     text-decoration: none;
     display: block;
     /* color: black; */
@@ -95,10 +101,15 @@
 
 /* about */
 .about{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    height: 450px;
 }
 
+#wel{
+    padding-top: 110x;
+    height: 100px;
+}
 
 /* place banner  */
 #about{
@@ -134,7 +145,7 @@
 
 /* footer */
 
-.footer{
+.pfooter{
     align-content: center;
     align-content: justify;
     width: 100%;
