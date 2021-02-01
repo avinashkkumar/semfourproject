@@ -1,3 +1,16 @@
+ /* xxxx     notes     xxxx */
+ /* use this to select the bannet h1 
+do change the name of the id first 
+#mplaces div div h1 a{
+    text-decoration: none;
+    color: black;
+} */
+
+
+
+/* genral */
+/* ***************************************************************** */
+
 :root{
     font-family: 'Baloo Bhai 2', cursive;
     margin: 0px;
@@ -8,19 +21,22 @@ body{
     margin: 0px;
 }
 
-/* genral purpose header and paragraph */
 .hprimary{
+    text-decoration: none;
     text-align:center;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 } 
 .hsecondary{
+    text-decoration: none;
     text-align: center;
 }
 
 .pprimary{
+    text-decoration: none;
     text-align: center;
 }
 .psecondary{
+    text-decoration: none;
     text-align: justify;
 }
 
@@ -29,9 +45,9 @@ body{
 }
 
 /* navigation  */
+/* ***************************************************************** */
 #navbar{
     display : flex;
-    /* border: 1px solid black ; */
     position: sticky;
     top:0px;
     margin:0px;
@@ -77,7 +93,6 @@ body{
     margin-right : 8px;
     margin-top : 0px;
     margin-bottom : 0px;
-    /* border: 1px solid black; */
     
 }
 
@@ -100,6 +115,7 @@ body{
 }
 
 /* about */
+/* ***************************************************************** */
 .about{
     padding-top: 50px;
     padding-bottom: 0px;
@@ -122,6 +138,12 @@ body{
     margin: 0px;
 }
 
+/* banner spot for places  */
+/* ***************************************************************** */
+#mplaces div div h1 a{
+    text-decoration: none;
+    color: black;
+}
 #choose{
     display :flex;
     flex-direction: row;
@@ -143,9 +165,65 @@ body{
     align-items: center;
 }  
 
-/* footer */
+/* Mumbai spot and banners */
+/* ***************************************************************** */
 
-.pfooter{
+#mchoose{
+    display :flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-content: space-evenly;
+}
+
+.mumbai{
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.mname{
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mimage{
+    align-items: center;
+}  
+/* pune spot and banners */
+/* ***************************************************************** */
+
+#pchoose{
+    display :flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-content: space-evenly;
+}
+
+.pune{
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.pname{
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mimage{
+    align-items: center;
+}  
+
+/* footer */
+/* ***************************************************************** */
+
+#footer{
     align-content: center;
     align-content: justify;
     width: 100%;
