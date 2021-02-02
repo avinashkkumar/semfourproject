@@ -19,6 +19,7 @@ do change the name of the id first
 
 body{
     margin: 0px;
+    background-image: linear-gradient(180deg,rgba(12, 126, 220, 0.5),rgba(43, 255, 188, 0.5));
 }
 
 .hprimary{
@@ -43,6 +44,7 @@ body{
 .pfooter{
     text-align: center;
 }
+
 
 /* navigation  */
 /* ***************************************************************** */
@@ -118,19 +120,18 @@ body{
 /* ***************************************************************** */
 .about{
     padding-top: 50px;
-    padding-bottom: 0px;
-    height: 450px;
+    padding-bottom: 100px;
 }
 
 #wel{
     padding-top: 110x;
-    height: 100px;
 }
 
 /* place banner  */
 #about{
     display: flex;
     flex-direction: column ;
+    flex-wrap: wrap;
 }
 
 .intro{
@@ -140,7 +141,7 @@ body{
 
 /* banner spot for places  */
 /* ***************************************************************** */
-#mplaces div div h1 a{
+#places a{
     text-decoration: none;
     color: black;
 }
@@ -155,10 +156,11 @@ body{
     margin: auto;
     padding: 10px;
     width: 250px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: #ffffff;
 
 }
 .pimage{
@@ -167,7 +169,10 @@ body{
 
 /* Mumbai spot and banners */
 /* ***************************************************************** */
-
+#mumbai div a {
+    text-decoration: none;
+    color: black;
+}
 #mchoose{
     display :flex;
     flex-direction: row;
@@ -184,16 +189,21 @@ body{
     margin: auto;
     padding: 10px;
     width: 250px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: #ffffff;
 }
 .mimage{
     align-items: center;
 }  
 /* pune spot and banners */
 /* ***************************************************************** */
+#pune div a{
+    text-decoration: none;
+    color: black;
+}
 
 #pchoose{
     display :flex;
@@ -207,21 +217,150 @@ body{
     padding-bottom: 200px;
 }
 
-.pname{
+.pnname{
     margin: auto;
     padding: 10px;
     width: 250px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: #ffffff;
 }
-.mimage{
+.pnimage{
     align-items: center;
-}  
+} 
+
+
+
+/* nasik  spot and banners */
+/* ***************************************************************** */
+.nasik{
+    display: flex;
+    flex-direction: column;
+}
+#nasik div a{
+    text-decoration: none;
+    color: black;
+}
+
+#nchoose{
+    display :flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-content: space-evenly;
+}
+
+.nasik{
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.nkname{
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+.nkimage{
+    align-items: center;
+} 
+
+/* ajanta ellora  spot and banners */
+/* ***************************************************************** */
+.ajanta{
+    display: flex;
+    flex-direction: column;
+}
+#ajanta div a{
+    text-decoration: none;
+    color: black;
+}
+
+#aechoose{
+    display :flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-content: space-evenly;
+}
+
+.ajanta{
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.aename{
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+.aeimage{
+    align-items: center;
+} 
+
+
+
+/* lonavala  spot and banners */
+/* ***************************************************************** */
+.lonavala{
+    display: flex;
+    flex-direction: column;
+}
+#lonavala div a{
+    text-decoration: none;
+    color: black;
+}
+
+#lachoose{
+    display :flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-content: space-evenly;
+}
+
+.lonavala{
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.laname{
+    margin: auto;
+    padding: 10px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+.laimage{
+    align-items: center;
+} 
+
 
 /* footer */
 /* ***************************************************************** */
+
+.npad{
+    margin:0px;
+    padding:0px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+#footer p a{
+    text-decoration: none;
+    color: black;
+}
 
 #footer{
     align-content: center;
@@ -229,5 +368,16 @@ body{
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background-color:  rgb(204, 204, 226);
+    background-color:  rgb(180, 180, 180);
+}
+#footer div p a{
+    padding:4%;
+}
+
+.footer{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.ptert{
+    font-size: 1.3rem;
 }
