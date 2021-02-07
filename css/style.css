@@ -19,7 +19,7 @@ do change the name of the id first
 
 body{
     margin: 0px;
-    background-image: linear-gradient(180deg,rgba(12, 126, 220, 0.5),rgba(43, 255, 188, 0.5));
+    background-color: rgb(238, 201, 196);
 }
 
 .hprimary{
@@ -45,6 +45,28 @@ body{
     text-align: center;
 }
 
+@media screen and (max-width:720px){
+    .hprimary{
+        text-decoration: none;
+        text-align:center;
+        font-size: 3rem;
+    } 
+    .pprimary{
+        font-size: 0.8rem;
+    }
+
+
+}
+@media screen and (max-width:500px){
+    .hprimary{
+        text-decoration: none;
+        text-align:center;
+        font-size: 3rem;
+    } 
+    .pprimary{
+        font-size: 0.7rem;
+    }
+}
 
 /* navigation  */
 /* ***************************************************************** */
@@ -116,15 +138,61 @@ body{
     background-color: white;
 }
 
+@media screen and (max-width:720px){
+    #logo{
+        display: none;
+    }
+    
+    #navbar ul li a{
+        padding-left: 10px;
+        padding-right: 10px;
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        display: block;
+        /* color: black; */
+        border-radius: 10px;
+        font-size: 2rem;
+        margin-left: 8pxpx;
+        font-size: 1.4rem ;
+        
+    }
+
+    #navbar ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        justify-content:space-evenly;
+    
+    }
+
+    #feedback{
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width:1048px){
+    #navbar ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin:0px;
+    }
+
+}
 /* about */
 /* ***************************************************************** */
 .about{
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 #wel{
-    padding-top: 110x;
+    padding-top: 0px;
 }
 
 /* place banner  */
@@ -198,6 +266,13 @@ body{
 .mimage{
     align-items: center;
 }  
+
+@media screen and (max-width:720px){
+    .mumbai{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
 /* pune spot and banners */
 /* ***************************************************************** */
 #pune div a{
@@ -231,7 +306,12 @@ body{
     align-items: center;
 } 
 
-
+@media screen and (max-width:720px){
+    .pune{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
 
 /* nasik  spot and banners */
 /* ***************************************************************** */
@@ -270,6 +350,13 @@ body{
     align-items: center;
 } 
 
+@media screen and (max-width:720px){
+    .nasik{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
 /* ajanta ellora  spot and banners */
 /* ***************************************************************** */
 .ajanta{
@@ -307,7 +394,12 @@ body{
     align-items: center;
 } 
 
-
+@media screen and (max-width:720px){
+    .ajanta{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
 
 /* lonavala  spot and banners */
 /* ***************************************************************** */
@@ -345,6 +437,13 @@ body{
 .laimage{
     align-items: center;
 } 
+
+@media screen and (max-width:720px){
+    .lonavala{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
 
 
 /* footer */
