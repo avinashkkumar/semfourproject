@@ -12,6 +12,12 @@ body{
     padding: 0px;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 /* navigation  */
 /* ***************************************************************** */
 #navbar{
@@ -82,6 +88,53 @@ body{
     background-color: white;
 }
 
+@media screen and (max-width:720px){
+    #logo{
+        display: none;
+    }
+    
+    #navbar ul li a{
+        padding-left: 10px;
+        padding-right: 10px;
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        display: block;
+        /* color: black; */
+        border-radius: 10px;
+        font-size: 2rem;
+        margin-left: 8pxpx;
+        font-size: 1.4rem ;
+        
+    }
+
+    #navbar ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        justify-content:space-evenly;
+    
+    }
+
+    #feedback{
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width:1048px){
+    #navbar ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin:0px;
+    }
+
+}
 
 /* contents  */
 /* ***************************************************************** */

@@ -17,6 +17,10 @@ do change the name of the id first
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0px;
     background-color: rgb(238, 201, 196);
@@ -72,7 +76,7 @@ body{
 /* ***************************************************************** */
 #navbar{
     display : flex;
-    position: sticky;
+    position: sticky ;
     top:0px;
     margin:0px;
     padding: 0px;
@@ -188,7 +192,19 @@ body{
 /* about */
 /* ***************************************************************** */
 .about{
-    padding-bottom: 150px;
+    padding-top: 15%;
+    padding-bottom: 15%;    
+    width: 100%;
+    height: 75%;
+    background-image: url(/temp_image/10-14-Mojave-15.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slider 12s infinite linear;
+}
+
+@keyframes slider{
+    33%{ background-image:url(/temp_image/288085.jpg) }
+    66%{ background-image:url(/temp_image/403499.jpg) }
 }
 
 #wel{
@@ -204,7 +220,32 @@ body{
 
 .intro{
     font-size: 1.6rem;
-    margin: 0px;
+    display: inline;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 15px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.st{
+    display: inline;
+    margin: auto;
+    background-color: rgba(255,255,255,0.5);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+@media screen and (max-width:800){
+    .about{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
 }
 
 /* banner spot for places  */
