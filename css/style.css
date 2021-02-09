@@ -196,15 +196,15 @@ body{
     padding-bottom: 15%;    
     width: 100%;
     height: 75%;
-    background-image: url(/temp_image/10-14-Mojave-15.jpg);
+    background-image: url(../temp_image/10-14-Mojave-15.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     animation: slider 12s infinite linear;
 }
 
 @keyframes slider{
-    33%{ background-image:url(/temp_image/288085.jpg) }
-    66%{ background-image:url(/temp_image/403499.jpg) }
+    33%{ background-image:url(../temp_image/288085.jpg) }
+    66%{ background-image:url(../temp_image/403499.jpg) }
 }
 
 #wel{
