@@ -43,6 +43,7 @@ body{
 .psecondary{
     text-decoration: none;
     text-align: justify;
+    font-size: 1.4rem;
 }
 
 .pfooter{
@@ -192,23 +193,64 @@ body{
 /* about */
 /* ***************************************************************** */
 .about{
-    padding-top: 15%;
-    padding-bottom: 15%;    
+    padding-top: 10%;
+    padding-bottom: 10%;    
     width: 100%;
     height: 75%;
-    background-image: url(../temp_image/10-14-Mojave-15.jpg);
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(../images/indisplay/tinified/98046-Elephanta-Caves.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    animation: slider 12s infinite linear;
+    animation: slider 50s infinite linear;
 }
 
 @keyframes slider{
-    33%{ background-image:url(../temp_image/288085.jpg) }
-    66%{ background-image:url(../temp_image/403499.jpg) }
+    10%{ background-image:url(../images/indisplay/tinified/Dugarwadi.jpg) }
+    15%{ background-image:url(../images/indisplay/tinified/Dugarwadi.jpg) }
+    20%{ background-image:url(../images/indisplay/tinified/Fi-16.png) }
+    25%{ background-image:url(../images/indisplay/tinified/Fi-16.png) }
+    30%{ background-image:url(../images/indisplay/tinified/IMG_20191117_191601.jpg) }
+    35%{ background-image:url(../images/indisplay/tinified/IMG_20191117_191601.jpg) }
+    40%{ background-image:url(../images/indisplay/tinified/IMG_20191206_173253.jpg) }
+    45%{ background-image:url(../images/indisplay/tinified/IMG_20191206_173253.jpg) }
+    50%{ background-image:url(../images/indisplay/tinified/IMG_20191213_141101.jpg) }
+    55%{ background-image:url(../images/indisplay/tinified/IMG_20191213_141101.jpg) }
+    60%{ background-image:url(../images/indisplay/tinified/IMG_20200605_123934_HDR.jpg) }
+    65%{ background-image:url(../images/indisplay/tinified/IMG_20200605_123934_HDR.jpg) }
+    70%{ background-image:url(../images/indisplay/tinified/kailas-temple-ellora-caves-complex-maharashtra-1920x1080.jpg) }
+    75%{ background-image:url(../images/indisplay/tinified/kailas-temple-ellora-caves-complex-maharashtra-1920x1080.jpg) }
+    80%{ background-image:url(../images/indisplay/tinified/Lonavala-destinations-private-jet-1366x768.jpg) }
+    85%{ background-image:url(../images/indisplay/tinified/Lonavala-destinations-private-jet-1366x768.jpg) }
+    90%{ background-image:url(../images/indisplay/tinified/Sunset_at_Khadakwasla_dam_pune_20190116141712.jpg) }
+    95%{ background-image:url(../images/indisplay/tinified/Sunset_at_Khadakwasla_dam_pune_20190116141712.jpg) }
 }
 
 #wel{
     padding-top: 0px;
+}
+
+.intro{
+    font-size: 1.6rem;
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 15px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left: 50%;
+    font-size: 2.2rem;
+}
+
+@media screen and (max-width:550px){
+    .about{
+        animation: none;
+        background: none;
+    }
+    .intro{
+        margin-left: 0px;
+    }
 }
 
 /* place banner  */
@@ -216,18 +258,6 @@ body{
     display: flex;
     flex-direction: column ;
     flex-wrap: wrap;
-}
-
-.intro{
-    font-size: 1.6rem;
-    display: inline;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.6);
-    margin-top: 2px;
-    margin-bottom: 2px;
-    border-radius: 15px;
-    padding-left:10px;
-    padding-right:10px;
 }
 
 .st{
@@ -245,6 +275,9 @@ body{
     .about{
         padding-top: 20%;
         padding-bottom: 20%;
+    }
+    .intro{
+        margin-left: 30%;
     }
 }
 

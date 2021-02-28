@@ -49,6 +49,10 @@ html{
     font-size: 3rem;
 }
 
+iframe{
+    border-radius: 15px;
+    border: 3px solid black;
+}
 
 /* navigation  */
 /* ***************************************************************** */
@@ -192,15 +196,104 @@ html{
     margin-left: 10%;
 }
 
-/* contents  */
+/* reachablity  */
+/* ***************************************************************** */
+.reach{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: rgb(218, 227, 255);
+    margin: 3%;
+    padding: 2%;
+    margin-bottom: 0px;
+}
+
+
+
+/* hotel  */
 /* ***************************************************************** */
 #hotelp{
     margin-top: 10px;
+    padding-left:3% ;
     display: flex;
-    width: 95%;
+    flex-direction: column;
+    width: 93%;
+    border-radius: 15px;
     background-color: rgb(230, 230, 230);
 }
 
 .hotph{
     margin: auto ;
+
+}
+
+.hotpn{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.hotpn li{
+    list-style: none;
+    /* border: 2px solid black ; */
+    background-color: rgb(194, 194, 194);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* footer */
+#footer{
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+    padding:2%;
+    margin:2%;
+}
+.fof{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: rgba(255,255,255,0.4);
+}
+.sm{
+    margin: 10px;
+    padding-left: 2%;
+}
+.sm img{
+    width: 30px;
+}
+.nm{
+    margin: none;
+}
+
+/* mobile optimisation */
+/* ******************************************************************* */
+@media screen and (max-width:600px){
+    /* genral */
+    .r1{
+        font-size: 1rem;
+    }
+
+    .r2{
+        font-size: 1.7rem;
+    }
+    .r24{
+        font-size: 2rem;
+    }
+    .r3{
+        font-size: 2.4rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    .hotpn{
+        width: 300px;
+        padding-left: 0px;
+    }
 }
