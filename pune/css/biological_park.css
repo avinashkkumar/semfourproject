@@ -1,4 +1,7 @@
 
+/* use r1 , r2, r24, r3 for the font sizing  */
+/* use bmn, tmn, rmn, lmn for the removing respective margin*/
+
 
 /* genral  */
 /* ***************************************************************** */
@@ -12,9 +15,38 @@ body{
     padding: 0px;
 }
 
+.bmn{
+    margin-bottom: 0px;
+}
 
+.tmn{
+    margin-top: 0px;
+}
+
+.lmn{
+    margin-left: 0px;
+}
+
+.rmn{
+    margin-right: 0px;
+}
 html{
     scroll-behavior: smooth;
+}
+
+.r1{
+    font-size: 1.5rem;
+}
+
+.r2{
+    font-size: 2rem;
+}
+.r24{
+    font-size: 2.4rem;
+}
+
+.r3{
+    font-size: 3rem;
 }
 
 
@@ -138,3 +170,37 @@ html{
 
 /* contents  */
 /* ***************************************************************** */
+
+.pane{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.map{
+    width: 95%;
+    height: 500px;
+    background-color: rgb(224, 224, 224);
+}
+
+#img{
+    background-color: black;
+    height: 400px;;
+    width: 95%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* contents  */
+/* ***************************************************************** */
+#hotelp{
+    margin-top: 10px;
+    display: flex;
+    width: 95%;
+    background-color: rgb(230, 230, 230);
+}
+
+.hotph{
+    margin: auto ;
+}
