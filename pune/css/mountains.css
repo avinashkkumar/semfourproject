@@ -138,3 +138,57 @@ html{
 
 /* contents  */
 /* ***************************************************************** */
+
+
+
+
+/* footer */
+#footer{
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+    padding:2%;
+    margin:2%;
+}
+.fof{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: rgba(255,255,255,0.4);
+}
+.sm{
+    margin: 10px;
+    padding-left: 2%;
+}
+.sm img{
+    width: 30px;
+}
+.nm{
+    margin: none;
+}
+
+/* mobile optimisation */
+/* ******************************************************************* */
+@media screen and (max-width:600px){
+    /* genral */
+    .r1{
+        font-size: 1rem;
+    }
+
+    .r2{
+        font-size: 1.7rem;
+    }
+    .r24{
+        font-size: 2rem;
+    }
+    .r3{
+        font-size: 2.4rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    .hotpn{
+        width: 300px;
+        padding-left: 0px;
+    }
+}
