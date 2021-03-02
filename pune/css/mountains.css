@@ -18,6 +18,46 @@ html{
 }
 
 
+.bmn{
+    margin-bottom: 0px;
+}
+
+.tmn{
+    margin-top: 0px;
+}
+
+.lmn{
+    margin-left: 0px;
+}
+
+.rmn{
+    margin-right: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.r1{
+    font-size: 1.5rem;
+}
+
+.r2{
+    font-size: 2rem;
+}
+.r24{
+    font-size: 2.4rem;
+}
+
+.r3{
+    font-size: 3rem;
+}
+
+iframe{
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+
 /* navigation  */
 /* ***************************************************************** */
 #navbar{
@@ -136,6 +176,45 @@ html{
 
 }
 
+
+/* other places  */
+/* ******************************************************************* */
+.otherplaces{
+    width: 100%;
+}
+
+.pn{
+    padding:0px;
+}
+
+.otherplaces ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.other{
+    background-color: rgb(225, 225, 225);
+    border:2px solid white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.other:hover{
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.present{
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+
+}
+
 /* contents  */
 /* ***************************************************************** */
 
@@ -172,7 +251,9 @@ html{
     margin-bottom: 0px;
 }
 
-
+table{
+    width: 350px;
+}
 
 /* hotel  */
 /* ***************************************************************** */
