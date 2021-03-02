@@ -229,6 +229,8 @@ iframe{
     width: 95%;
     height: 500px;
     background-color: rgb(224, 224, 224);
+    margin-top: 5px ;
+    margin-bottom: 5px ;
 }
 
 #img{
