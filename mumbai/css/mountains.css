@@ -1,4 +1,7 @@
 
+/* use r1 , r2, r24, r3 for the font sizing  */
+/* use bmn, tmn, rmn, lmn for the removing respective margin*/
+
 
 /* genral  */
 /* ***************************************************************** */
@@ -12,11 +15,44 @@ body{
     padding: 0px;
 }
 
+.bmn{
+    margin-bottom: 0px;
+}
 
+.tmn{
+    margin-top: 0px;
+}
+
+.lmn{
+    margin-left: 0px;
+}
+
+.rmn{
+    margin-right: 0px;
+}
 html{
     scroll-behavior: smooth;
 }
 
+.r1{
+    font-size: 1.5rem;
+}
+
+.r2{
+    font-size: 2rem;
+}
+.r24{
+    font-size: 2.4rem;
+}
+
+.r3{
+    font-size: 3rem;
+}
+
+iframe{
+    border-radius: 15px;
+    border: 3px solid black;
+}
 
 /* navigation  */
 /* ***************************************************************** */
@@ -138,3 +174,171 @@ html{
 
 /* contents  */
 /* ***************************************************************** */
+
+.pane{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.map{
+    width: 95%;
+    height: 500px;
+    background-color: rgb(224, 224, 224);
+}
+
+#img{
+    background-color: black;
+    height: 400px;;
+    width: 95%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* reachablity  */
+/* ***************************************************************** */
+.reach{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: rgb(218, 227, 255);
+    margin: 3%;
+    padding: 2%;
+    margin-bottom: 0px;
+}
+
+table{
+    width: 350px;
+}
+
+
+/* hotel  */
+/* ***************************************************************** */
+#hotelp{
+    margin-top: 10px;
+    padding-left:3% ;
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    border-radius: 15px;
+    background-color: rgb(230, 230, 230);
+}
+
+.hotph{
+    margin: auto ;
+
+}
+
+.hotpn{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.hotpn li{
+    list-style: none;
+    /* border: 2px solid black ; */
+    background-color: rgb(194, 194, 194);
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* footer */
+#footer{
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+    padding:2%;
+    margin:2%;
+}
+.fof{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: rgba(255,255,255,0.4);
+}
+.sm{
+    margin: 10px;
+    padding-left: 2%;
+}
+.sm img{
+    width: 30px;
+}
+.nm{
+    margin: none;
+}
+
+
+/* other places  */
+/* ******************************************************************* */
+.otherplaces{
+    width: 100%;
+}
+
+.pn{
+    padding:0px;
+}
+
+.otherplaces ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.other{
+    background-color: rgb(225, 225, 225);
+    border:2px solid white;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.other:hover{
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.present{
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+
+}
+
+/* mobile optimisation */
+/* ******************************************************************* */
+@media screen and (max-width:600px){
+    /* genral */
+    .r1{
+        font-size: 1rem;
+    }
+
+    .r2{
+        font-size: 1.7rem;
+    }
+    .r24{
+        font-size: 2rem;
+    }
+    .r3{
+        font-size: 2.4rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    .hotpn{
+        width: 300px;
+        padding-left: 0px;
+    }
+    table{
+        width: 250px;
+    }
+}
