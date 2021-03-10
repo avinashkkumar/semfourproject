@@ -130,12 +130,57 @@ body{
 /* contact div  */
 /* ***************************************************************** */
 .contact{
-    margin: auto 2% auto 2%;
-    background-color: rgb(218, 227, 255);
+    margin: 1%;
+    background-color: rgb(227, 234, 255);
     border-radius:15px;
     min-height: 80vh;
 }
 
 h1{
     text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+h2{
+    margin: auto;
+    margin-left: 0px;
+    padding-left: 15px;
+    font-size: 1.7rem;
+}
+
+.panes{
+    padding: 2%;
+    margin-top: 0px;
+}
+
+.image{
+    width: 50px;
+}
+
+.pane1{
+    display: flex;
+}
+
+.pane2{
+    display: flex;
+}
+
+.pane3{
+    display: flex;
+}
+
+p{
+    font-size: 2rem;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 0px;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: rgb(255, 123, 0);
 }
