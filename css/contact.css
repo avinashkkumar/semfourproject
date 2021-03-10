@@ -1,0 +1,141 @@
+:root{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+}
+
+/* navigation  */
+/* ***************************************************************** */
+#navbar{
+    display : flex;
+    position: sticky ;
+    top:0px;
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(150, 150, 150);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#logo{
+    margin: 10px 10px;
+}
+
+#logo img{
+    height: 50px;
+    width:55px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+
+#navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+#navbar ul li{
+    list-style: none ;
+    margin-left: 8px;
+    margin-right : 8px;
+    margin-top : 0px;
+    margin-bottom : 0px;
+    
+}
+
+#navbar ul li a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    /* color: black; */
+    border-radius: 10px;
+    font-size: 1.7rem;
+    margin-left: 10px;
+    
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width:720px){
+    #logo{
+        display: none;
+    }
+    
+    #navbar ul li a{
+        padding-left: 10px;
+        padding-right: 10px;
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        display: block;
+        /* color: black; */
+        border-radius: 10px;
+        font-size: 2rem;
+        margin-left: 8pxpx;
+        font-size: 1.4rem ;
+        
+    }
+
+    #navbar ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        justify-content:space-evenly;
+    
+    }
+
+    #feedback{
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width:1048px){
+    #navbar ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin:0px;
+    }
+
+}
+
+
+/* contact div  */
+/* ***************************************************************** */
+.contact{
+    margin: auto 2% auto 2%;
+    background-color: rgb(218, 227, 255);
+    border-radius:15px;
+    min-height: 80vh;
+}
+
+h1{
+    text-align: center;
+}

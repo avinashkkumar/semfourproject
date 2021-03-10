@@ -23,7 +23,6 @@ html{
 
 body{
     margin: 0px;
-    background-color: rgb(238, 201, 196);
 }
 
 .hprimary{
@@ -298,11 +297,11 @@ body{
     margin: auto;
     padding: 10px;
     width: 250px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
 
 }
 .pimage{
@@ -324,18 +323,18 @@ body{
 
 .mumbai{
     padding-top: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .mname{
     margin: auto;
     padding: 10px;
     width: 250px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
 }
 .mimage{
     align-items: center;
@@ -363,18 +362,18 @@ body{
 
 .pune{
     padding-top: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .pnname{
     margin: auto;
     padding: 10px;
     width: 250px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
 }
 .pnimage{
     align-items: center;
@@ -407,18 +406,18 @@ body{
 
 .nasik{
     padding-top: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .nkname{
     margin: auto;
     padding: 10px;
     width: 250px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
 }
 .nkimage{
     align-items: center;
@@ -451,18 +450,18 @@ body{
 
 .ajanta{
     padding-top: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .aename{
     margin: auto;
     padding: 10px;
     width: 250px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
 }
 .aeimage{
     align-items: center;
@@ -495,18 +494,18 @@ body{
 
 .lonavala{
     padding-top: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .laname{
     margin: auto;
     padding: 10px;
     width: 250px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 12px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
 }
 .laimage{
     align-items: center;
@@ -522,35 +521,27 @@ body{
 
 /* footer */
 /* ***************************************************************** */
-
-.npad{
-    margin:0px;
-    padding:0px;
-    padding-left: 8%;
-    padding-right: 8%;
-}
-
-#footer p a{
-    text-decoration: none;
-    color: black;
-}
-
 #footer{
-    align-content: center;
-    align-content: justify;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    background-color:  rgb(180, 180, 180);
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+    padding:2%;
+    margin:2%;
 }
-#footer div p a{
-    padding:4%;
+.fof{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
-.footer{
-    padding-top: 2%;
-    padding-bottom: 2%;
+footer{
+    background-color: rgba(255,255,255,0.4);
 }
-.ptert{
-    font-size: 1.3rem;
+.sm{
+    margin: 10px;
+    padding-left: 2%;
+}
+.sm img{
+    width: 30px;
+}
+.nm{
+    margin: none;
 }
