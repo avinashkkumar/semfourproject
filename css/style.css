@@ -10,7 +10,9 @@ do change the name of the id first
 
 /* genral */
 /* ***************************************************************** */
-
+li{
+    font-size: 1.5rem;
+}
 :root{
     font-family: 'Baloo Bhai 2', cursive;
     margin: 0px;
@@ -238,8 +240,7 @@ body{
 
 @media screen and (max-width:550px){
     .about{
-        animation: none;
-        background: none;
+        height: 200px;
     }
     .intro{
         margin-left: 0px;
@@ -318,7 +319,7 @@ body{
 
 .mumbai{
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 .mname{
@@ -332,7 +333,11 @@ body{
 }
 .mimage{
     align-items: center;
-}  
+}
+
+.mumimage img{
+    width : 250px;
+}
 
 @media screen and (max-width:720px){
     .mumbai{
@@ -356,7 +361,7 @@ body{
 
 .pune{
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 .pnname{
@@ -372,6 +377,10 @@ body{
 .pnimage{
     align-items: center;
 } 
+
+.pnimage img{
+    width: 250px;
+}
 
 @media screen and (max-width:720px){
     .pune{
@@ -400,7 +409,7 @@ body{
 
 .nasik{
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 .nkname{
@@ -416,6 +425,10 @@ body{
 .nkimage{
     align-items: center;
 } 
+
+.nkimage img{
+    width: 250px;
+}
 
 @media screen and (max-width:720px){
     .nasik{
@@ -444,7 +457,7 @@ body{
 
 .ajanta{
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 .aename{
@@ -460,6 +473,10 @@ body{
 .aeimage{
     align-items: center;
 } 
+
+.aeimage img{
+    width: 250px;
+}
 
 @media screen and (max-width:720px){
     .ajanta{
@@ -488,7 +505,7 @@ body{
 
 .lonavala{
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .laname{
@@ -504,6 +521,10 @@ body{
 .laimage{
     align-items: center;
 } 
+
+.laimage img{
+    width: 250px;
+}
 
 @media screen and (max-width:720px){
     .lonavala{
