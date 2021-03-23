@@ -56,120 +56,121 @@ iframe{
 
 /* navigation  */
 /* ***************************************************************** */
-#navbar{
-    display : flex;
-    position: sticky;
-    top:0px;
-    margin:0px;
-    padding: 0px;
-    border: 0px;
-}
 
-#navbar::before{
-    content: "";
-    background-color: rgb(150, 150, 150);
-    position: absolute;
-    top:0px;
-    left:0px;
-    height: 100%;
-    width:100%;
-    z-index: -1;
-    opacity: 1;
-}
-
-#logo{
-    margin: 10px 10px;
-}
-
-#logo img{
-    height: 50px;
-    width:55px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-}
-
-#navbar ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-left: 0px;
-    padding-right: 0px;
-
-}
-
-#navbar ul li{
-    list-style: none ;
-    margin-left: 8px;
-    margin-right : 8px;
-    margin-top : 0px;
-    margin-bottom : 0px;
-    
-}
-
-#navbar ul li a{
-    padding-left: 10px;
-    padding-right: 10px;
-    color:rgb(255, 255, 255);
+.logo a{
+    color:#ffffff;
     text-decoration: none;
-    display: block;
-    /* color: black; */
-    border-radius: 10px;
-    font-size: 1.7rem;
-    margin-left: 10px;
-    
 }
 
-#navbar ul li a:hover{
-    color: black;
-    background-color: white;
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #a502c5;
+    font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width:720px){
-    #logo{
-        display: none;
+.logo {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-size: 1.6rem;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.925);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1350px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
     }
     
-    #navbar ul li a{
-        padding-left: 10px;
-        padding-right: 10px;
-        color:rgb(255, 255, 255);
-        text-decoration: none;
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #4c005c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .nav-links li {
+        opacity: 0;
+    }
+    
+    .burger {
         display: block;
-        /* color: black; */
-        border-radius: 10px;
-        font-size: 2rem;
-        margin-left: 8pxpx;
-        font-size: 1.4rem ;
-        
+        cursor: pointer;
     }
-
-    #navbar ul{
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 0px;
-        margin: 0px;
-        justify-content:space-evenly;
-    
-    }
-
-    #feedback{
-        display: none;
-    }
-    
-
 }
 
-@media screen and (max-width:1048px){
-    #navbar ul{
-        display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        padding-left: 0px;
-        padding-right: 0px;
-        margin:0px;
-    }
+.nav-active {
+        transform: translateX(0%);
+}
 
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* other places  */
@@ -219,6 +220,7 @@ iframe{
     flex-direction: column;
     align-content: center;
     align-items: center;
+    margin-top: 8vh;
 }
 
 .map{
