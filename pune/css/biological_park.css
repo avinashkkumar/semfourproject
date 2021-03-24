@@ -9,10 +9,16 @@
     border:0px;
     margin: 0px;
     font-family: 'Baloo Bhai 2', cursive;
+    --nav:#a502c5;
+    --white: #ffffff;
+    --background: #a502c511;
+    --linkbackground: #4c005c;
+    --black: rgb(0, 0, 0);
 }
 body{
     margin: 0px;
     padding: 0px;
+    background-color: var(--background);
 }
 
 .bmn{
@@ -51,14 +57,14 @@ html{
 
 iframe{
     border-radius: 15px;
-    border: 3px solid black;
+    border: 3px solid var(--black);
 }
 
 /* navigation  */
 /* ***************************************************************** */
 
 .logo a{
-    color:#ffffff;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -70,12 +76,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 8vh;
-    background-color: #a502c5;
+    background-color: var(--nav);
     font-family: "Poppins", sans-serif;
 }
 
 .logo {
-    color: rgb(255, 255, 255);
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -93,7 +99,7 @@ nav {
 }
 
 .nav-links a {
-    color: rgba(255, 255, 255, 0.925);
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -106,7 +112,7 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--white);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -127,7 +133,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #4c005c;
+        background-color: var(--linkbackground);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -187,7 +193,7 @@ nav {
 .map{
     width: 95%;
     height: 500px;
-    background-color: rgb(224, 224, 224);
+    background-color: var(--white);
 }
 
 #img{
@@ -203,8 +209,9 @@ nav {
 .reach{
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
-    background-color: rgb(218, 227, 255);
+    border-radius: 0px 0px 15px 15px;
+    background-color: var(--white);
+    border-top: 4px solid var(--nav);
     margin: 3%;
     padding: 2%;
 }
@@ -222,8 +229,9 @@ table{
     display: flex;
     flex-direction: column;
     width: 93%;
-    border-radius: 15px;
-    background-color: rgb(230, 230, 230);
+    border-radius: 0px 0px 15px 15px;
+    border-top:4px solid var(--nav);
+    background-color: var(--white);
 }
 
 .hotph{
@@ -241,9 +249,10 @@ table{
 .hotpn li{
     list-style: none;
     /* border: 2px solid black ; */
-    background-color: rgb(194, 194, 194);
-    border-radius: 10px;
+    background-color: var(--background);
+    border-radius: 0px 10px 0px 10px;
     margin-top: 15px;
+    border-top: 2px solid var(--nav);
 }
 
 a{
@@ -253,8 +262,9 @@ a{
 
 /* footer */
 #footer{
-    background-color: rgb(228, 228, 228);
-    border-radius: 10px;
+    background-color: var(--white);
+    border-radius: 0px 0px 10px 10px;
+    border-top: 4px solid var(--nav);
     padding:2%;
     margin:2%;
 }
@@ -263,9 +273,7 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
 }
-footer{
-    background-color: rgba(255,255,255,0.4);
-}
+
 .sm{
     margin: 10px;
     padding-left: 2%;
@@ -296,9 +304,7 @@ footer{
 }
 
 .other{
-    background-color: rgb(225, 225, 225);
-    border:2px solid white;
-    border-radius: 10px;
+    background-color: var(--white);
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
@@ -306,13 +312,13 @@ footer{
 }
 
 .other:hover{
-    border: 2px solid black;
     background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid var(--nav) ;
 }
 
 .present{
-    border: 2px solid black;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
+    border-bottom: 3px solid var(--nav) ;
 
 }
 

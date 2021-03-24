@@ -1,4 +1,7 @@
 
+/* use r1 , r2, r24, r3 for the font sizing  */
+/* use bmn, tmn, rmn, lmn for the removing respective margin*/
+
 
 /* genral  */
 /* ***************************************************************** */
@@ -6,15 +9,16 @@
     border:0px;
     margin: 0px;
     font-family: 'Baloo Bhai 2', cursive;
+    --nav:#a502c5;
+    --white: #ffffff;
+    --background: #a502c511;
+    --linkbackground: #4c005c;
+    --black: rgb(0, 0, 0);
 }
 body{
     margin: 0px;
     padding: 0px;
-}
-
-
-html{
-    scroll-behavior: smooth;
+    background-color: var(--background);
 }
 
 .bmn{
@@ -31,6 +35,9 @@ html{
 
 .rmn{
     margin-right: 0px;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 .r1{
@@ -50,15 +57,14 @@ html{
 
 iframe{
     border-radius: 15px;
-    border: 3px solid black;
+    border: 3px solid var(--black);
 }
-
 
 /* navigation  */
 /* ***************************************************************** */
 
 .logo a{
-    color:#ffffff;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -70,12 +76,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 8vh;
-    background-color: #a502c5;
+    background-color: var(--nav);
     font-family: "Poppins", sans-serif;
 }
 
 .logo {
-    color: rgb(255, 255, 255);
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -93,7 +99,7 @@ nav {
 }
 
 .nav-links a {
-    color: rgba(255, 255, 255, 0.925);
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -106,7 +112,7 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--white);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -127,7 +133,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #4c005c;
+        background-color: var(--linkbackground);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -173,6 +179,113 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* contents  */
+/* ***************************************************************** */
+
+.pane{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 8vh;
+}
+
+.map{
+    width: 95%;
+    height: 500px;
+    background-color: var(--white);
+}
+
+#img{
+    background-color: black;
+    height: 400px;;
+    width: 95%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* reachablity  */
+/* ***************************************************************** */
+.reach{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 15px 15px;
+    background-color: var(--white);
+    border-top: 4px solid var(--nav);
+    margin: 3%;
+    padding: 2%;
+}
+
+table{
+    width: 350px;
+}
+
+
+/* hotel  */
+/* ***************************************************************** */
+#hotelp{
+    margin-top: 10px;
+    padding-left:3% ;
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    border-radius: 0px 0px 15px 15px;
+    border-top:4px solid var(--nav);
+    background-color: var(--white);
+}
+
+.hotph{
+    margin: auto ;
+
+}
+
+.hotpn{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.hotpn li{
+    list-style: none;
+    /* border: 2px solid black ; */
+    background-color: var(--background);
+    border-radius: 0px 10px 0px 10px;
+    margin-top: 15px;
+    border-top: 2px solid var(--nav);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* footer */
+#footer{
+    background-color: var(--white);
+    border-radius: 0px 0px 10px 10px;
+    border-top: 4px solid var(--nav);
+    padding:2%;
+    margin:2%;
+}
+.fof{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sm{
+    margin: 10px;
+    padding-left: 2%;
+}
+.sm img{
+    width: 30px;
+}
+.nm{
+    margin: none;
+}
+
+
 /* other places  */
 /* ******************************************************************* */
 .otherplaces{
@@ -191,9 +304,7 @@ nav {
 }
 
 .other{
-    background-color: rgb(225, 225, 225);
-    border:2px solid white;
-    border-radius: 10px;
+    background-color: var(--white);
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 10px;
@@ -201,117 +312,14 @@ nav {
 }
 
 .other:hover{
-    border: 2px solid black;
     background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid var(--nav) ;
 }
 
 .present{
-    border: 2px solid black;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
+    border-bottom: 3px solid var(--nav) ;
 
-}
-
-
-/* contents  */
-/* ***************************************************************** */
-
-.pane{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    margin-top: 8vh;
-}
-
-.map{
-    width: 95%;
-    height: 500px;
-    background-color: rgb(224, 224, 224);
-}
-
-#img{
-    background-color: black;
-    height: 400px;;
-    width: 95%;
-    margin-right: 10%;
-    margin-left: 10%;
-}
-
-/* reachablity  */
-/* ***************************************************************** */
-.reach{
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    background-color: rgb(218, 227, 255);
-    margin: 3%;
-    padding: 2%;
-}
-
-
-
-/* hotel  */
-/* ***************************************************************** */
-#hotelp{
-    margin-top: 10px;
-    padding-left:3% ;
-    display: flex;
-    flex-direction: column;
-    width: 93%;
-    border-radius: 15px;
-    background-color: rgb(230, 230, 230);
-}
-
-.hotph{
-    margin: auto ;
-
-}
-
-.hotpn{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-}
-
-.hotpn li{
-    list-style: none;
-    /* border: 2px solid black ; */
-    background-color: rgb(194, 194, 194);
-    border-radius: 10px;
-    margin-top: 15px;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
-
-
-/* footer */
-#footer{
-    background-color: rgb(228, 228, 228);
-    border-radius: 10px;
-    padding:2%;
-    margin:2%;
-}
-.fof{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-footer{
-    background-color: rgba(255,255,255,0.4);
-}
-.sm{
-    margin: 10px;
-    padding-left: 2%;
-}
-.sm img{
-    width: 30px;
-}
-.nm{
-    margin: none;
 }
 
 /* mobile optimisation */
@@ -336,5 +344,8 @@ footer{
     .hotpn{
         width: 300px;
         padding-left: 0px;
+    }
+    table{
+        width: 250px;
     }
 }

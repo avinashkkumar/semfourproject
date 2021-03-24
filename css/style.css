@@ -15,6 +15,10 @@ do change the name of the id first
     font-family: 'Baloo Bhai 2', cursive;
     margin: 0px;
     padding: 0px;
+    --nav:#a502c5;
+    --white: #ffffff;
+    --background: #a502c525;
+    --navback:#4c005c;
 }
 
 html{
@@ -23,7 +27,7 @@ html{
 
 body{
     margin: 0px;
-    background-color:  #a502c525;
+    background-color: var(--background);
 }
 
 .hprimary{
@@ -77,7 +81,7 @@ body{
 /* ***************************************************************** */
 
 .logo a{
-    color:#ffffff;
+    color:var(--white);
     text-decoration: none;
 }
 
@@ -89,12 +93,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 8vh;
-    background-color: #a502c5;
+    background-color: var(--nav);
     font-family: "Poppins", sans-serif;
 }
 
 .logo {
-    color: rgb(255, 255, 255);
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -112,7 +116,7 @@ nav {
 }
 
 .nav-links a {
-    color: rgba(255, 255, 255, 0.925);
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -125,7 +129,7 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--white);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -146,7 +150,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #4c005c;
+        background-color: var(--navback);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -255,8 +259,6 @@ nav {
 
 .st{
     display: inline;
-    margin: auto;
-    background-color: rgba(255,255,255,0.5);
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -293,10 +295,10 @@ nav {
     width: 250px;
     /* border: 1px solid black; */
     border-radius:  0px 0px 10px 10px;
-    border-top: 4px solid #a502c5;
+    border-top: 4px solid var(--nav);
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #f7f7f7;
+    background-color: var(--white);
 
 }
 .pimage{
@@ -327,9 +329,9 @@ nav {
     width: 250px;
     /* border: 1px solid black; */
     border-radius:  0px 0px 10px 10px;
-    border-top: 4px solid #a502c5;
+    border-top: 4px solid var(--nav);
     margin-bottom: 10px;
-    background-color: #f7f7f7;
+    background-color: var(--white);
 }
 .mimage{
     align-items: center;
@@ -370,10 +372,10 @@ nav {
     width: 250px;
     /* border: 1px solid black; */
     border-radius:  0px 0px 10px 10px;
-    border-top: 4px solid #a502c5;
+    border-top: 4px solid var(--nav);
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #f7f7f7;
+    background-color: var(--white);
 }
 .pnimage{
     align-items: center;
@@ -419,10 +421,10 @@ nav {
     width: 250px;
     /* border: 1px solid black; */
     border-radius:  0px 0px 10px 10px;
-    border-top: 4px solid #a502c5;
+    border-top: 4px solid var(--nav);
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #f7f7f7;
+    background-color: var(--white);
 }
 .nkimage{
     align-items: center;
@@ -468,10 +470,10 @@ nav {
     width: 250px;
     /* border: 1px solid black; */
     border-radius:  0px 0px 10px 10px;
-    border-top: 4px solid #a502c5;
+    border-top: 4px solid var(--nav);
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #f7f7f7;
+    background-color: var(--white);
 }
 .aeimage{
     align-items: center;
@@ -517,10 +519,10 @@ nav {
     width: 250px;
     /* border: 1px solid black; */
     border-radius:  0px 0px 10px 10px;
-    border-top: 4px solid #a502c5;
+    border-top: 4px solid var(--nav);
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #f7f7f7;
+    background-color: var(--white);
 }
 .laimage{
     align-items: center;
@@ -541,11 +543,11 @@ nav {
 /* footer */
 /* ***************************************************************** */
 #footer{
-    background-color: rgba(255, 255, 255, 0.712);
+    background-color: var(--white);
     border-radius: 0px 0px 10px 10px;
     padding:2%;
     margin:2%;
-    border-top: 5px solid #a502c5;
+    border-top: 5px solid var(--nav);
 }
 .fof{
     display: flex;
