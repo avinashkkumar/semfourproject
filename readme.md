@@ -5,8 +5,9 @@ This is a collage project that is made by Avinash Kumar and Abhishek Bulbule und
 The project repository consists of all file required to host the website online.
 
 >Scripting language and framework used<br><br>
-> <img src="./images/html.png" width = "100px">
-><img src="./images/css.png" width = "100px">
+> <img src="./images/html.svg" width = "100px">
+> <img src="./images/css.svg" width = "100px">
+> <img src="./images/js.svg" width = "100px">
 
 ## Regarding the website system 
 The website helps anyone to select the places that they want to visit in the given time and give a estimate budget (*on per day baisis) with the information for the accomodation, food, the travel and reachablity to a place.
