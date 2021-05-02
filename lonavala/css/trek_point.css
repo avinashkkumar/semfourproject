@@ -197,12 +197,52 @@ nav {
 }
 
 #img{
-    background-color: black;
-    height: 400px;;
+    display: flex;
+    background-position: center;
+    height: 500px;;
     width: 95%;
     margin-right: 10%;
     margin-left: 10%;
+    background-image: url(../images/tiger\ point/tp2.jpg);
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    animation: slider 15s infinite ease-in;
 }
+
+@keyframes slider{
+    20%{ background-image: url(../images/tiger\ point/tp2.jpg);}
+    25%{ background-image: url(../images/tiger\ point/tp2.jpg);}
+    45%{ background-image: url(../images/tiger\ point/tp1.jpg);}
+    50%{ background-image: url(../images/tiger\ point/tp3.jpg);}
+    70%{ background-image: url(../images/tiger\ point/tp3.jpg);}
+    75%{ background-image: url(../images/tiger\ point/tp4.jpg);}
+    95%{ background-image: url(../images/tiger\ point/tp4.jpg);}
+
+}
+#img1{
+    display: flex;
+    background-position: center;
+    height: 500px;;
+    width: 95%;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-image: url(../images/tikona\ fort/tf1.jpg);
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    animation: slider1 15s infinite ease-in;
+}
+
+@keyframes slider1{
+    20%{ background-image: url(../images/tikona\ fort/tf1.jpg);}
+    25%{ background-image: url(../images/tikona\ fort/tf2.jpg);}
+    45%{ background-image: url(../images/tikona\ fort/tf2.jpg);}
+    50%{ background-image: url(../images/tikona\ fort/tf4.jpg);}
+    70%{ background-image: url(../images/tikona\ fort/tf4.jpg);}
+    75%{ background-image: url(../images/tikona\ fort/tf5.jpg);}
+    95%{ background-image: url(../images/tikona\ fort/tf5.jpg);}
+
+}
+
 
 /* reachablity  */
 /* ***************************************************************** */

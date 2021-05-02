@@ -196,13 +196,53 @@ nav {
     background-color: var(--white);
 }
 
-#img{
-    background-color: black;
-    height: 400px;;
+#imga{
+    display: flex;
+    background-position: center;
+    height: 500px;;
     width: 95%;
     margin-right: 10%;
     margin-left: 10%;
+    background-image: url(../images/sinhagad_fort/sf1.jpg);
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    animation: slider 15s infinite ease-in;
 }
+
+@keyframes slider{
+    20%{ background-image: url(../images/sinhagad_fort/sf1.jpg);}
+    25%{ background-image: url(../images/sinhagad_fort/sf2.jpg);}
+    45%{ background-image: url(../images/sinhagad_fort/sf2.jpg);}
+    50%{ background-image: url(../images/sinhagad_fort/sf3.jpg);}
+    70%{ background-image: url(../images/sinhagad_fort/sf3.jpg);}
+    75%{ background-image: url(../images/sinhagad_fort/sw5.jpg);}
+    95%{ background-image: url(../images/sinhagad_fort/sw5.jpg);}
+
+}
+#imgb{
+    display: flex;
+    background-position: center;
+    height: 500px;;
+    width: 95%;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-image: url(../images/pune_okayama_friendship_garden/p1.jpg);
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    animation: slider2 15s infinite ease-in;
+}
+
+@keyframes slider2{
+    20%{ background-image: url(../images/pune_okayama_friendship_garden/p1.jpg);}
+    25%{ background-image: url(../images/pune_okayama_friendship_garden/p2.jpg);}
+    45%{ background-image: url(../images/pune_okayama_friendship_garden/p2.jpg);}
+    50%{ background-image: url(../images/pune_okayama_friendship_garden/p3.jpg);}
+    70%{ background-image: url(../images/pune_okayama_friendship_garden/p3.jpg);}
+    75%{ background-image: url(../images/pune_okayama_friendship_garden/p4.jpg);}
+    95%{ background-image: url(../images/pune_okayama_friendship_garden/p4.jpg);}
+
+}
+
 
 /* reachablity  */
 /* ***************************************************************** */
