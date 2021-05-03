@@ -197,9 +197,8 @@ nav {
 }
 
 #img{
-    display: flex;
     background-position: center;
-    height: 500px;;
+    height: 500px;
     width: 95%;
     margin-right: 10%;
     margin-left: 10%;
