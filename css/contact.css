@@ -2,6 +2,12 @@
     font-family: 'Baloo Bhai 2', cursive;
     margin: 0px;
     padding: 0px;
+    
+    --nav:#a502c5;
+    --white: #ffffff;
+    --black:black;
+    --background: #a502c525;
+    --navback:#4c005c;
 }
 
 body{
@@ -12,7 +18,7 @@ body{
 /* ***************************************************************** */
 
 .logo a{
-    color:#ffffff;
+    color:var(--white);
     text-decoration: none;
 }
 
@@ -24,12 +30,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 8vh;
-    background-color: #a502c5;
+    background-color: var(--nav);
     font-family: "Poppins", sans-serif;
 }
 
 .logo {
-    color: rgb(255, 255, 255);
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
@@ -47,7 +53,7 @@ nav {
 }
 
 .nav-links a {
-    color: rgba(255, 255, 255, 0.925);
+    color: var(--white);
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -60,7 +66,7 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--white);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -81,7 +87,7 @@ nav {
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #4c005c;
+        background-color: var(--navback);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -133,7 +139,7 @@ nav {
 .contact{
     margin: 1%;
     margin-top: 10vh;
-    background-color: rgb(227, 234, 255);
+    /* background-color: rgb(227, 234, 255); */
     border-radius:15px;
     min-height: 80vh;
 }
@@ -154,6 +160,8 @@ h2{
 .panes{
     padding: 2%;
     margin-top: 0px;
+    background-color: var(--background);
+    border-radius: 5px;
 }
 
 .image{
@@ -180,9 +188,6 @@ p{
 }
 
 a{
-    color: black;
+    color: var(--black);
 }
 
-.hovli:hover{
-    color: rgb(255, 123, 0);
-}
